@@ -1,3 +1,4 @@
+import Providers from "./Providers";
 import Header from "./components/Header";
 import "./globals.css";
 
@@ -10,11 +11,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        {/* header */}
-        <Header />
-        {/* navbar */}
-        {/* searchBox */}
-        {children}
+        <Providers>
+          {/* header */}
+          <Header />
+          {/* navbar */}
+          {/* searchBox */}
+          {children}
+        </Providers>
       </body>
     </html>
   );
