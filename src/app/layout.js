@@ -1,7 +1,6 @@
+import Header from "@/components/Header";
+import Navbar from "@/components/Navbar";
 import Providers from "./Providers";
-import Header from "./components/Header";
-import Navbar from "./components/Navbar";
-import "./globals.css";
 
 export const metadata = {
   title: "imdb",
@@ -14,7 +13,7 @@ export default function RootLayout({ children }) {
       <body>
         <Providers>
           {/* header */}
-          <Header />
+          <header />
           {/* navbar */}
           <Navbar />
           {/* searchBox */}
