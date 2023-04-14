@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
       <body>
         <Providers>
           {/* header */}
-          <header />
+          <Header />
           {/* navbar */}
           <Navbar />
           {/* searchBox */}
